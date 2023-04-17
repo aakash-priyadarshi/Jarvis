@@ -79,8 +79,7 @@ The web application has the following features:
 If you find this project helpful and would like to support its further development, you can buy me a coffee through PayPal at the link below:
 
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.com/paypalme/aakashm301)
-![UPI](https://img.shields.io/badge/UPI-Donate-blue?style=for-the-badge&logo=upi&link=https://paytm.me/OLcH-Dj)
-
+[![UPI](https://img.shields.io/badge/Donate-UPI-blue?style=for-the-badge)](https://drive.google.com/file/d/1-k2aegxW30OLvNpfqFCTQEAckVun2Qwz/view?usp=sharing)
 
 
 # License
