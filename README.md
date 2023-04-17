@@ -74,5 +74,12 @@ The web application has the following features:
 [google-cloud-image]: https://img.shields.io/badge/Google%20Cloud-v1.0-blue.svg
 [google-cloud-url]: https://console.cloud.google.com/
 
+## Donate
+
+If you find this project helpful and would like to support its further development, you can buy me a coffee through PayPal at the link below:
+
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.com/paypalme/aakashm301)
+
+
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
