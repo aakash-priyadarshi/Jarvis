@@ -37,16 +37,18 @@ This is an openAI-based web application built using Node.js and HTML. The applic
    ```sh
    npm install
    ```
-3. Create a .env file in the root directory and add the following environment variables:
+3. Enable the Google Cloud Speech-to-Text and Text-to-Speech APIs and download a service account key in JSON format. Save the key as `google-credentials.json` in the root directory of the project.
+
+4. Create a .env file in the root directory and add the following environment variables:
    ```sh
    OPENAI_API_KEY=your_api_key
    GOOGLE_APPLICATION_CREDENTIALS=path_to_service_account_key_file
    ```
-4. Start the server
+5. Start the server
    ```sh
    npm start
    ```
-5. Open the application in your browser at http://localhost:3000
+6. Open the application in your browser at http://localhost:3000
 
 # Usage
 The web application has the following features:
