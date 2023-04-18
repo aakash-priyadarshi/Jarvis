@@ -93,3 +93,9 @@ If you find this project helpful and would like to support its further developme
 First release.
 
 ```
+### v1.0.1
+
+```sh
+Added custom speeches.
+
+```
