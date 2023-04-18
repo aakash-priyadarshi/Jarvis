@@ -60,7 +60,8 @@ function stopRecording() {
             let data = await response.json();
             transcribedText.textContent = data.text;
             responseText.textContent = data.responseText;
-            audioData = data.audioData; // This will correctly assign the base64-encoded audio data to the global variable
+            audioData = data.audioData;
+            playResponse();
         } else {
             console.error('Error uploading audio');
         }
@@ -91,6 +92,7 @@ async function submitText() {
         const data = await response.json();
         responseText.textContent = data.responseText;
         audioData = data.audioData;
+        playResponse();
     } else {
         console.error('Error submitting text');
     }

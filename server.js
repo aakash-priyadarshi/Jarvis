@@ -9,6 +9,7 @@ const { Configuration, OpenAIApi } = require('openai');
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+// const { findCustomResponse } = require('speech'); // fetch custom speech file
 
 
 const app = express();
@@ -114,8 +115,36 @@ app.post('/submit-text', async (req, res) => {
 });
 
 async function processText(text) {
+    
     // Send the text to the OpenAI API and get a response
-    const prompt = `User: ${text}\nAI:`;
+    let prompt;
+
+    if (text.toLowerCase().includes("what is your name")) {
+      prompt = `User: ${text}\nJarvis: `;
+    } else if (text.toLowerCase().includes("what is your full name")) {
+      prompt = `User: ${text}\nJarvis Priyadarshi: `;
+    }else if(text.toLowerCase().includes("what is your first name")){
+      prompt = `User: ${text}\nJarvis:`;
+    }else if(text.toLowerCase().includes("what is your last name")){
+      prompt = `User: ${text}\nPriyadarshi:`;
+    }else if(text.toLowerCase().includes("what is your surname name")){
+      prompt = `User: ${text}\nPriyadarshi:`;
+    }else{
+      prompt = `User: ${text}\nJarvis:`;
+    }
+
+  //   const customResponse = findCustomResponse(text);
+
+  // let prompt;
+  // if (customResponse) {
+  //   prompt = `User: ${text}\nJarvis: ${customResponse}`;
+  // } else {
+  //   prompt = `User: ${text}\nJarvis:`;
+  // }
+
+  ///////
+
+ 
     const openaiResponse = await createCompletion(prompt, 'text-davinci-003');
   
     // Extract the response text from the API response
