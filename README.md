@@ -10,7 +10,7 @@
  This the most simple version which was built to test if I can make the GPT 3.5 talk like Jarvis as we see in Iron Man movie.
  The application is totally based on Node.js and simple HTML.
  
- ` Jarvis v2 is being prepared with more advance features like image generation, managing github, self fixing and slef improving function.`
+ ` Jarvis v2 is being prepared with more advance features like image generation, managing github, self fixing and self improving function.`
 
 
 # OpenAI-Based Web Application
