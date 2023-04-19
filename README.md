@@ -1,4 +1,4 @@
-# Jarvis v1.0
+# Jarvis v1
 ![Built with Node.js](https://img.shields.io/badge/Built%20with-Node.js-339933?style=for-the-badge&logo=node.js)
 ![Built with HTML](https://img.shields.io/badge/Built%20with-HTML-E34F26?style=for-the-badge&logo=html5)
 ![OpenAI API](https://img.shields.io/badge/OpenAI-API-2A2D2E?style=for-the-badge&logo=openai)
@@ -10,6 +10,7 @@
  This the most simple version which was built to test if I can make the GPT 3.5 talk like Jarvis as we see in Iron Man movie.
  The application is totally based on Node.js and simple HTML.
  
+ ` Jarvis v2 is being prepared with more advance features like image generation, managing github, self fixing and self improving function.`
 
 
 # OpenAI-Based Web Application
@@ -91,5 +92,11 @@ If you find this project helpful and would like to support its further developme
 
 ```sh
 First release.
+
+```
+### v1.0.1
+
+```sh
+Added custom speeches.
 
 ```
