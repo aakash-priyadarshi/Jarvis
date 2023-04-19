@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarvis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>Record Voice</h2>
-                <button id="startRecording" class="btn btn-primary">Start Recording</button>
-                <button id="stopRecording" class="btn btn-danger" disabled>Stop Recording</button>
+                <button id="startRecording" class="btn btn-primary"><i class="bi bi-record"></i> Start Recording</button>
+                <button id="stopRecording" class="btn btn-danger" disabled><i class="bi bi-stop"></i> Stop Recording</button>
                 <p id="recordingStatus"></p>
                 <p id="transcribedText"><strong>Transcribed text:</strong> <span>Will appear here</span></p>
             </div>
@@ -31,7 +32,7 @@
             <div class="col-md-12">
                 <h2>Response</h2>
                 <p id="responseText"><strong>Response text:</strong> <span>Will appear here</span></p>
-                <button id="playResponse" class="btn btn-primary">Play Response</button>
+                <button id="playResponse" class="btn btn-primary"><i class="bi bi-play-circle"></i> Play Response</button>
             </div>
         </div>
     </div>
