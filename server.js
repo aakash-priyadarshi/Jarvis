@@ -123,8 +123,10 @@ async function processText(text) {
       prompt = `User: ${text}\nJarvis: `;
     } else if (text.toLowerCase().includes("what is your full name")) {
       prompt = `User: ${text}\nJarvis Priyadarshi: `;
-    }else if(text.toLowerCase().includes("what is your first name")){
-      prompt = `User: ${text}\nJarvis:`;
+    }else if (text.toLowerCase().includes("what is your full name")) {
+      prompt = `User: ${text}\nJarvis Priyadarshi: `;
+    }else if(text.toLowerCase().includes("who made you")){
+      prompt = `User: ${text}\nAakash:`;
     }else if(text.toLowerCase().includes("what is your last name")){
       prompt = `User: ${text}\nPriyadarshi:`;
     }else if(text.toLowerCase().includes("what is your surname name")){

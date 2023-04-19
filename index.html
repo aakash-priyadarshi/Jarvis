@@ -1,30 +1,49 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Jarvis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <h1>Jarvis with OpenAI</h1>
+    <div class="container mt-5">
+        <h1 class="mb-5">Jarvis with OpenAI</h1>
 
-  <h2>Record Voice</h2>
-  <button id="startRecording">Start Recording</button>
-  <button id="stopRecording" disabled>Stop Recording</button>
-  <p id="recordingStatus"></p>
-  <p id="transcribedText">Transcribed text will appear here</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Record Voice</h2>
+                <button id="startRecording" class="btn btn-primary">Start Recording</button>
+                <button id="stopRecording" class="btn btn-danger" disabled>Stop Recording</button>
+                <p id="recordingStatus"></p>
+                <p id="transcribedText"><strong>Transcribed text:</strong> <span>Will appear here</span></p>
+            </div>
+            <div class="col-md-6">
+                <h2>Type Text</h2>
+                <textarea id="textInput" class="form-control" rows="4"></textarea>
+                <button id="submitText" class="btn btn-primary mt-2">Submit Text</button>
+            </div>
+        </div>
 
-  <h2>Type Text</h2>
-  <textarea id="textInput" rows="4" cols="50"></textarea>
-  <button id="submitText">Submit Text</button>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Response</h2>
+                <p id="responseText"><strong>Response text:</strong> <span>Will appear here</span></p>
+                <button id="playResponse" class="btn btn-primary">Play Response</button>
+            </div>
+        </div>
+    </div>
 
-  <h2>Response</h2>
-  <p id="responseText">Response text will appear here</p>
-  <button id="playResponse">Play Response</button>
-
-  <script src="/socket.io/socket.io.js"></script>
-  <!--BEGINNING OF A GREAT SCRIPT-->
+    <script src="/socket.io/socket.io.js"></script>
+    <!--BEGINNING OF A GREAT SCRIPT-->
+    <script>
+        // Add a simple Buffer implementation for browser
+       
   
-  <script>
+  
+
     // Add a simple Buffer implementation for browser
     const Buffer = {
       from: function (base64, encoding) {
@@ -95,10 +114,13 @@
   
       return new Blob([view], { type: "audio/wav" });
     }
+
+    
   </script>
-  
-  <!--ENDING OF GREAT SCRIPT-->
-  
-  <script src="client.js"></script>
+    <!--ENDING OF GREAT SCRIPT-->
+    
+
+    <script src="client.js"></script>
 </body>
+
 </html>
