@@ -47,7 +47,7 @@ This is an openAI-based web application built using Node.js and HTML. The applic
    ```
 5. Start the server
    ```sh
-   npm start
+   node server.js
    ```
 6. Open the application in your browser at http://localhost:3000
 
